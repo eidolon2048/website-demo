@@ -1,0 +1,108 @@
+/* set up preferred colours */
+:root{  --color-1: #CA1AFF;
+        --color-2: #1AC2FF;
+        --color-3: #1AFF57;
+        --color-4: #0004ff; 
+}
+.purple-text{color: var(--color-1);}
+.blue-text  {color: var(--color-2);text-decoration: none;}
+.blue-text1 {color: var(--color-4);}
+.green-text {color: var(--color-3);}
+
+body{
+    background-color: rgb(78, 78, 78);
+    font-family: 'Courier New', Courier, monospace;;
+    margin: 1em auto;
+    max-width: 45em;
+}
+.centre-text {text-align: center;}
+
+/* shapes settings */
+.big-box{
+    background: black;
+    border-radius: 1.5em;
+    border: 0.2em solid var(--color-1);
+    padding: 2em;
+    margin: 0em auto;
+}
+.small-box{
+    background: black;
+    border-radius: 1.5em;
+    border: 0.2em solid var(--color-1);
+    padding: 0;
+    margin: 0 auto;
+    
+}
+.question-box{
+    background: black;
+    border: 0.2em solid var(--color-1);
+    border-radius: 1.5em;
+    padding: 1em 1em;
+    margin: 1em auto;
+}
+.question-box input[type="checkbox"] {margin-right: 0.1em;}
+
+/* links menu */
+.mainmenu{
+    margin: 1em auto;
+    text-align: center;
+    
+}
+
+.mainmenu ul{
+    list-style: none;
+    padding: 0;
+    margin:0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 0.5em;
+}
+
+.mainmenu li{
+    margin: 0;
+}
+.mainmenu a{
+    display: inline-block;
+    padding: 0.3em 1em;
+    border-radius: 1em;                  
+    background: black;            
+    color: var(--color-2);
+    text-decoration: none;
+    font-weight: 600;
+    font-family: 'Courier New', Courier, monospace;
+    border: 0.15em solid var(--color-2);   
+}
+
+:target {
+    outline: 0.1em solid var(--color-4);  
+    border-radius: 0.2em;
+    width: auto;
+}
+
+/* images */
+img{
+    display: auto;
+    width: 40em;
+    height: auto;
+}
+
+#theone{
+    width: 25em;
+    height: auto;
+}
+
+/* video / iframe */
+.centre-block{
+    display: block;
+    margin: 0em auto;
+    margin-top: 2em;
+    width: 100%;
+    max-width: 35em;
+    aspect-ratio: 16/9;
+}
+
+iframe{
+    border-radius: 1.5em;
+    border: 0.2em solid var(--color-1);
+}
