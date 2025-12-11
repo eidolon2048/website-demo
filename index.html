@@ -8,7 +8,7 @@
 </head>
 <body>
 
-<div class="small-box">
+<div>
 <h1 class="centre-text purple-text">Modules description</h1>
 </div>
     <nav class="mainmenu">
@@ -25,11 +25,13 @@
 
 
 <article class="green-text">
+    <img src="img/DataScience.avif" alt="Screenshot"/>
     <h2 id="one">
         <a href="https://moodle.port.ac.uk/course/view.php?id=2297"> 
             1. Core Computing Consepts</a>
     </h2>
-    <p>This module covers four foundational topics central to a broad understanding of the discipline of 
+    <p>
+        This module covers four foundational topics central to a broad understanding of the discipline of 
                 computing science and for developing computing systems. Each topic will be covered over a six week block,
                 knowledge gained will be applied during several later modules and, depending on a student's degree programme, 
                 will be developed further. An exploration of the history, major advances and trends in computing are discussed 
@@ -39,7 +41,7 @@
                 but which is not covered in a dedicated module elsewhere at level 4.
             </p>
 
-    <h2 id="two" class="blue-text">
+    <h2 id="two">
         <a href="https://moodle.port.ac.uk/course/view.php?id=2278">
             2. Database Systems Dewelopment</a>
         </h2>
@@ -48,7 +50,7 @@
                 tools that are crucial in the creation of databases.
             </p>
 
-    <h2 id="three" class="blue-text">
+    <h2 id="three">
         <a href="https://moodle.port.ac.uk/course/view.php?id=2306">
             3. Practical Data Science</a>
     </h2>
@@ -59,7 +61,7 @@
                 information, using current and emerging digital technologies.
             </p>
 
-    <h2 id="four" class="blue-text">
+    <h2 id="four">
         <a href="https://moodle.port.ac.uk/course/view.php?id=3653">
             4. Architecture and Operating Systems</a>
         </h2>
@@ -71,7 +73,7 @@
                 the development and functions, architecture and processes of operating system software, and to examine the use of 
                 algorithms in operating system software.</p>
                 
-    <h2 id="five"class="blue-text">
+    <h2 id="five">
         <a href="https://moodle.port.ac.uk/course/view.php?id=4248">
             5. Architecture and Operating Systems(Maths)</a>
     </h2>
@@ -81,7 +83,7 @@
                 in advance if we need to work together to provide information in an alternative format. For more information
                 on the Moodle platform itself</p>
 
-    <h2 id="six" class="blue-text">
+    <h2 id="six" >
         <a href="https://moodle.port.ac.uk/course/view.php?id=3762">
             6. Programming 1</a>
     </h2>
@@ -106,7 +108,7 @@
 
 
 <div class="question-box">
-    <h2 id="qbox"  onclick="toggleDesc('fav-form', this)">
+    <h2 id="qbox" class="green-text" onclick="toggleDesc('fav-form', this)">
         Which is your favourite module?
     </h2>
 
@@ -116,32 +118,32 @@
             <label>
             <input type="checkbox">
             1. Core Computing Concepts
-            </label><br>
+            </label>
 
             <label>
             <input type="checkbox">
             2. Database Systems Development
-            </label><br>
+            </label>
 
             <label>
             <input type="checkbox">
             3. Practical Data Science
-            </label><br>
+            </label>
 
             <label>
             <input type="checkbox">
             4. Architecture and Operating Systems
-            </label><br>
+            </label>
 
             <label>
             <input type="checkbox">
             5. Architecture and Operating Systems (Maths😭)
-            </label><br>
+            </label>
 
             <label>
             <input type="checkbox">
             6. Programming 1
-            </label></br>
+            </label>
 
             </br><label > Other:
             <input type="text">
@@ -156,14 +158,9 @@ function toggleDesc(id, box) {
 
     // show / hide form
     desc.style.display = isOpen ? "none" : "block";
-
-    // add/remove class to control hover style
-    if (isOpen) {
-        box.classList.remove("opened");
-    } else {
-        box.classList.add("opened");
-    }
+    box.classList.toggle("opened", isOpen);
 }
 </script>
 </body>
 </html>
+
